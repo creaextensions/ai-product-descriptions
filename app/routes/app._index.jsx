@@ -15,7 +15,7 @@ import {
   Banner,
   List,
 } from "@shopify/polaris";
-import { SparklesIcon, ProductIcon, SettingsIcon, ChartVerticalFilledIcon } from "@shopify/polaris-icons";
+import { WandIcon, ProductIcon, SettingsIcon, ChartVerticalFilledIcon } from "@shopify/polaris-icons";
 import { authenticate } from "../shopify.server";
 
 export const loader = async ({ request }) => {
@@ -79,7 +79,7 @@ export default function Index() {
                   alignItems: "center",
                   justifyContent: "center"
                 }}>
-                  <Icon source={SparklesIcon} tone="base" />
+                  <Icon source={WandIcon} tone="base" />
                 </div>
                 <BlockStack gap="100">
                   <Text variant="headingXl" as="h1">AI Product Descriptions</Text>
@@ -162,7 +162,7 @@ export default function Index() {
               <Box padding="500">
                 <BlockStack gap="400">
                   <InlineStack gap="300" blockAlign="center">
-                    <Icon source={SparklesIcon} tone="base" />
+                    <Icon source={WandIcon} tone="base" />
                     <Text variant="headingMd" as="h2">Bulk Generator</Text>
                   </InlineStack>
                   <Text variant="bodyMd" tone="subdued">
