@@ -4,8 +4,8 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
+  useRouteError,
 } from "@remix-run/react";
-import { AppProvider } from "@shopify/shopify-app-remix/react";
 import { json } from "@remix-run/node";
 import polarisStyles from "@shopify/polaris/build/esm/styles.css?url";
 import { boundary } from "@shopify/shopify-app-remix/server";
@@ -43,5 +43,6 @@ export default function App() {
 }
 
 export function ErrorBoundary() {
-  return boundary.error(useRouteError());
+  const error = useRouteError();
+  return boundary.error(error);
 }
