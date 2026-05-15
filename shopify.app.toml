@@ -1,0 +1,24 @@
+name = "ai-product-descriptions"
+client_id = "YOUR_CLIENT_ID"
+application_url = "https://YOUR_TUNNEL_URL"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "YOUR_DEV_STORE.myshopify.com"
+
+[access_scopes]
+scopes = "read_products,write_products"
+
+[auth]
+redirect_urls = [
+  "https://YOUR_TUNNEL_URL/auth/callback",
+  "https://YOUR_TUNNEL_URL/auth/shopify/callback",
+  "https://YOUR_TUNNEL_URL/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-01"
+
+[pos]
+embedded = false
